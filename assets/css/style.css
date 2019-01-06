@@ -6,3 +6,7 @@
 .choice {
 	cursor: pointer;
 }
+
+#post-game {
+	display: none;
+}
