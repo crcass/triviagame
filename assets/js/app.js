@@ -2,8 +2,8 @@ $(document).ready(function() {
 
    // question objects
    const questionOne = {
-      clue: 'This is question 1',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Who holds the record for most career passing yards?',
+      choices: ['Landry Jones', 'Case Keenum', 'Graham Harrell', 'Timmy Chang'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -16,8 +16,8 @@ $(document).ready(function() {
    }
 
    const questionTwo = {
-      clue: 'This is question 2',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Which coach has the most wins, all-time?',
+      choices: ['Joe Paterno', 'Bear Bryant', 'Bobby Bowden', 'Nick Saban'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -30,8 +30,8 @@ $(document).ready(function() {
    }
 
    const questionThree = {
-      clue: 'This is question 3',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Three of these schools have won 7 Heisman Trophies. Which has only won 6?',
+      choices: ['Ohio State', 'Notre Dame', 'USC', 'Oklahoma'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -39,13 +39,13 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[2];
       }
    }
 
    const questionFour = {
-      clue: 'This is question 4',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Which player has the most single season touchdown receptions?',
+      choices: ['Michael Crabtree', 'Randy Moss', 'Stedman Bailey', 'Troy Edwards'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -53,13 +53,13 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[3];
       }
    }
 
    const questionFive = {
-      clue: 'This is question 5',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Which player holds the career rushing record?',
+      choices: ['Tony Dorsett', 'Bo Jackson', 'Barry Sanders', 'Ron Dayne'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -67,13 +67,13 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[3];
       }
    }
 
    const questionSix = {
-      clue: 'This is question 6',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Who won the 1992 Heisman Trophy?',
+      choices: ['Gino Torretta', 'Marshall Faulk', 'Garrison Hearst', 'Drew Bledsoe'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -81,13 +81,13 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[0];
       }
    }
 
    const questionSeven = {
-      clue: 'This is question 7',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Which active coach has the most bowl game appearances?',
+      choices: ['Bill Snyder', 'Kirk Ferentz', 'Nick Saban', 'Gary Patterson'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -95,13 +95,13 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[2];
       }
    }
 
    const questionEight = {
-      clue: 'This is question 8',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Which player holds the single season rushing record?',
+      choices: ['Marcus Allen', 'Barry Sanders', 'Ron Dayne', 'Tony Dorsett'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -114,8 +114,8 @@ $(document).ready(function() {
    }
 
    const questionNine = {
-      clue: 'This is question 9',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Who has the most touchdown receptions in a single game?',
+      choices: ['Rashaun Woods', 'Corey Davis', 'Jarett Dillard', 'Ryan Broyles'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -123,13 +123,13 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[0];
       }
    }
 
    const questionTen = {
-      clue: 'This is question 10',
-      choices: ['choice 1', 'choice 2', 'choice 3', 'choice 4'],
+      clue: 'Who holds the single game rushing record?',
+      choices: ['Ricky Williams', 'Melvin Gordon', 'Samaje Perine', 'LaDanian Tomlinson'],
 
       setup() {
          $('#clue').text(this.clue);
@@ -137,7 +137,7 @@ $(document).ready(function() {
          $('#c2').text(this.choices[1]);
          $('#c3').text(this.choices[2]);
          $('#c4').text(this.choices[3]);
-         answer = this.choices[1];
+         answer = this.choices[2];
       }
    }
 
@@ -159,7 +159,7 @@ $(document).ready(function() {
             $('.timer').css('display', 'inline-block');
             $('.choice').css('display', 'block');
             $('#timer-text').text('Time Remaining:');
-            $('#timer-num').text(10)
+            $('#timer-num').text(13)
             gameTimer = setInterval(function() {
                $("#timer-num").text(t);
                t--;
@@ -167,7 +167,7 @@ $(document).ready(function() {
                   game.timeUp();
                }
             }, 1000);
-            t = 9;
+            t = 12;
          },
 
          post() {
@@ -176,7 +176,7 @@ $(document).ready(function() {
             $('.status').css('display', 'block');
             $('#clue').css('display', 'none');
             $('.choice').css('display', 'none');
-            $('#timer-num').text(5);
+            $('#timer-num').text(7);
             if (j === 10) {
                $('#timer-text').text('See Your Scores In:');
             } else {
@@ -191,7 +191,7 @@ $(document).ready(function() {
                   game.start();
                }
             }, 1000);
-            t = 4;
+            t = 6;
          },
 
          timeUp() {
@@ -203,7 +203,7 @@ $(document).ready(function() {
             $('.choice').css('display', 'none');
             $('#stat-head').text(`Time's Up!`);
             $('#stat-p').text(`The correct answer is ${answer}`);
-            $('#timer-num').text(5);
+            $('#timer-num').text(7);
             if (j === 10) {
                $('#timer-text').text('See Your Scores In:');
             } else {
@@ -218,7 +218,7 @@ $(document).ready(function() {
                   game.start();
                }
             }, 1000);
-            t = 4;
+            t = 6;
          },
 
          end() {
