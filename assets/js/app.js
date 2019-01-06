@@ -156,7 +156,10 @@ $(document).ready(function() {
 			$('.timer').css('display', 'inline-block');
 			$('.choice').css('display', 'block');
 			$('#timer-text').text('Time Remaining:');
+			$('#timer-num').text(10)
 			gameTimer = setTimeout(game.timeUp, 10000);
+			t = 10;
+			displayTimer;
 		},
 
 		post() {
@@ -166,7 +169,10 @@ $(document).ready(function() {
 			$('#clue').css('display', 'none');
 			$('.choice').css('display', 'none');
 			$('#timer-text').text('Next Round Starts In:');
+			$('#timer-num').text(5);
 			setTimeout(game.start, 5000);
+			t = 5;
+			displayTimer;
 		},
 
 		timeUp() {
@@ -178,10 +184,22 @@ $(document).ready(function() {
 			$('#stat-head').text('Time\'s Up!');
 			$('#stat-p').text(`The correct answer is ${answer}`);
 			$('#timer-text').text('Next Round Starts In:');
+			$('#timer-num').text(5);
 			setTimeout(game.start, 5000);
+			t = 5;
+			displayTimer;
 		}
 
 	}
+
+	let displayTimer = setInterval(function() {
+			$('#timer-num').text(t);
+			console.log(t);
+			t--;
+			if (t < 0) {
+				clearInterval(displayTimer);
+			}
+		}, 1000);
 
 	// question array
 	let questions = [
@@ -199,6 +217,7 @@ $(document).ready(function() {
 
 	// global variables
 	let j = 0;
+	let t = 0;
 	let playerChoice;
 	let answer;
 	let wins = 0;
