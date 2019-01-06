@@ -5,8 +5,17 @@
 
 .choice {
 	cursor: pointer;
+	display: none;
 }
 
-#post-game {
+#clue {
+	display: none;
+}
+
+.timer {
+	display: none;
+}
+
+.stats {
 	display: none;
 }
