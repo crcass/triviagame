@@ -229,7 +229,7 @@ $(document).ready(function() {
             $('.timer').css('display', 'none');
             $('.choice').css('display', 'none');
             $('#stat-head').text('Thanks for Playing!');
-            $('#stat-head'),css('color', '#fff');
+            $('#stat-head').css('color', '#fff');
             $('#stat-p').text('Your Final Score:');
             $('.stats').css('display', 'block');
             $('#wins').text(`Correct Answers: ${wins}`);
