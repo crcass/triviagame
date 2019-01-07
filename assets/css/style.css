@@ -1,21 +1,111 @@
+@font-face {
+	font-family: freshman;
+	src: url(../../assets/fonts/freshman.ttf);
+}
 
+html, body {
+	height: 100%;
+}
 
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Merriweather Sans', sans-serif;
+}
 
+.bg {
+	background-image: url(../../assets/images/cfb.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
 
+.site-container {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+h1 {
+	font-family: freshman, serif;
+	font-size: 4rem;
+}
+
+#stat-head {
+	font-size: 2.5rem;
+	margin-top: 5rem;
+}
+
+button {
+	cursor: pointer;
+	font-size: 1.25rem;
+}
+
+#start {
+	margin-top: 6rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
 
 .choice {
 	cursor: pointer;
 	display: none;
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+}
+
+.choice:hover {
+	color: #add8e6;
 }
 
 #clue {
 	display: none;
+	margin-top: 5rem;
 }
 
 .timer {
 	display: none;
+	margin-top: 1rem;
+}
+
+#stat-p {
+	font-size: 1.5rem;
+	margin-top: 4rem;
 }
 
 .stats {
 	display: none;
+}
+
+.stats p {
+	margin: 1rem 0;
+}
+
+footer {
+  background-color: rgba(64, 64, 64, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  font-size: 0.75rem;
+}
+
+footer span {
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+footer a:hover {
+  color: #F8B3FF;
 }

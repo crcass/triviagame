@@ -30,7 +30,7 @@ $(document).ready(function() {
    }
 
    const questionThree = {
-      clue: 'Three of these schools have won 7 Heisman Trophies. Which has only won 6?',
+      clue: 'Three of these schools have 7 Heisman Trophies. Which only has 6?',
       choices: ['Ohio State', 'Notre Dame', 'USC', 'Oklahoma'],
 
       setup() {
@@ -202,6 +202,7 @@ $(document).ready(function() {
             $('#clue').css('display', 'none');
             $('.choice').css('display', 'none');
             $('#stat-head').text(`Time's Up!`);
+            $('#stat-head').css('color', '#fff');
             $('#stat-p').text(`The correct answer is ${answer}`);
             $('#timer-num').text(7);
             if (j === 10) {
@@ -275,11 +276,13 @@ $(document).ready(function() {
          wins++;
          game.post();
          $('#stat-head').text('Good Job!');
+         $('#stat-head').css('color', '#90ee90');
          $('#stat-p').text(`The correct answer is ${answer}`);
       } else {
          losses++;
          game.post();
          $('#stat-head').text('Too Bad!');
+         $('#stat-head').css('color', '#dc143c')
          $('#stat-p').text(`The correct answer is ${answer}`);
       }
    })
@@ -294,7 +297,7 @@ $(document).ready(function() {
 
       $('#stat-head').text('Click to Begin!');
       $('#stat-p').empty();
-      $('#start').css('display', 'block');
+      $('#start').css('display', 'inline-block');
       $('.stats').css('display', 'none');
       $('#wins').empty();
       $('#losses').empty();
