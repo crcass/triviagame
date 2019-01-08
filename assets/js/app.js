@@ -30,7 +30,7 @@ $(document).ready(function() {
    }
 
    const questionThree = {
-      clue: 'Three of these schools have 7 Heisman Trophies. Which only has 6?',
+      clue: 'Which of these schools only has 6 Heisman Trophies?',
       choices: ['Ohio State', 'Notre Dame', 'USC', 'Oklahoma'],
 
       setup() {

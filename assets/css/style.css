@@ -109,3 +109,30 @@ footer a {
 footer a:hover {
   color: #F8B3FF;
 }
+
+@media screen and (max-width: 425px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	#stat-head {
+		font-size: 2rem;
+		margin-top: 2.5rem;
+	}
+
+	#start {
+		margin-top: 3.5rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	#clue {
+		font-size: 2rem;
+		margin-top: 2.5rem;
+	}
+
+	.choice {
+	}
+}
