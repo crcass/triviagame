@@ -135,6 +135,10 @@ footer a:hover {
 		font-size: 1.5rem;
 	}
 
+	.choice:hover {
+		color: #fff;
+	}
+
 	#clue {
 		font-size: 1.5rem;
 		margin-top: 2.5rem;
