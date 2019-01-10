@@ -13,8 +13,5 @@ In any case, the game will automatically move on after 7 seconds and present the
 Once all 10 questions have been answered or timed-out, the game will display the number of correct, incorrect, and unanswered questions. The player can then click a button to restart the game without refreshing the page.
 
 ## Known Issues
-* Untested on mobile. Use at your own risk!
-* Some minor flow issues
-* Text can be hard to read against background at times
 * No images on post-question screen
 * No sounds
