@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
 
    // question objects
    const questionOne = {
@@ -160,7 +160,7 @@ $(document).ready(function() {
             $('.choice').css('display', 'block');
             $('#timer-text').text('Time Remaining:');
             $('#timer-num').text(13)
-            gameTimer = setInterval(function() {
+            gameTimer = setInterval(() => {
                $("#timer-num").text(t);
                t--;
                if (t < 0) {
@@ -182,7 +182,7 @@ $(document).ready(function() {
             } else {
                $('#timer-text').text('Next Round Starts In:');
             }
-            gameTimer = setInterval(function() {
+            gameTimer = setInterval(() => {
                $("#timer-num").text(t);
                t--;
                if (t < 0 && j === 10) {
@@ -210,7 +210,7 @@ $(document).ready(function() {
             } else {
                $('#timer-text').text('Next Round Starts In:');
             }
-            gameTimer = setInterval(function() {
+            gameTimer = setInterval(() => {
                $("#timer-num").text(t);
                t--;
                if (t < 0 && j === 10) {
@@ -266,9 +266,9 @@ $(document).ready(function() {
    game.setup();
 
    // click button to start
-   $('#start').on('click', function() {
+   $('#start').on('click', (() => {
       game.start();
-   })
+   }))
 
    // game loop
    $('.choice').on('click', function() {
@@ -289,7 +289,7 @@ $(document).ready(function() {
    })
 
    // reset button
-   $('#reset').on('click', function() {
+   $('#reset').on('click', (() => {
       j = 0;
       t = 0;
       wins = 0;
@@ -303,5 +303,5 @@ $(document).ready(function() {
       $('#wins').empty();
       $('#losses').empty();
       $('#unanswered').empty();
-   })
+   }))
 });
